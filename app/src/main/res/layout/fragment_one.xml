@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/garage_background"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/garage_background" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#C6C6C6"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/garage_background"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/garage_headline_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:text="Garage"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/toolbar2"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+        <Button
+            android:id="@+id/race_nav_button"
+            android:layout_width="104dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#C6C6C6"
+            android:fontFamily="@font/orbitron"
+            android:text="Race"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/garage_nav_button"
+            android:layout_width="104dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#C6C6C6"
+            android:fontFamily="@font/orbitron"
+            android:text="Garage"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/race_nav_button"
+            app:layout_constraintEnd_toStartOf="@+id/race_nav_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/race_nav_button" />
+
+        <Button
+            android:id="@+id/carMarket_nav_button"
+            android:layout_width="104dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#C6C6C6"
+            android:fontFamily="@font/orbitron"
+            android:text="Car Market"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/race_nav_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/race_nav_button"
+            app:layout_constraintTop_toTopOf="@+id/race_nav_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
