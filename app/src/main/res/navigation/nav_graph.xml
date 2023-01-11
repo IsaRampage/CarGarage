@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/oneFragment">
 
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.example.cargarage1.ui.OneFragment"
+        android:label="OneFragment" />
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.example.cargarage1.ui.TwoFragment"
+        android:label="TwoFragment" >
+        <action
+            android:id="@+id/action_twoFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
 </navigation>
