@@ -37,21 +37,21 @@ class OneFragment : Fragment() {
 
         /* -------------------- UI-Interaktionen -------------------- */
 
-        //binding.btnFragmentOne.setOnClickListener {
-       //     viewModel.navigateToFragmentTwo()
-       // }
+        binding.carMarketNavButton.setOnClickListener {
+            viewModel.navigateToFragmentTwo()
+        }
 
         /* -------------------- Observer -------------------- */
 
         // Navigation zum zweiten Fragment
-        viewModel.navigateToFragmentTwo.observe(viewLifecycleOwner) {
-            if (it) {
-                //findNavController().navigate(
+       // viewModel.navigateToFragmentTwo.observe(viewLifecycleOwner) {
+            //if (it) {
+              //  findNavController().navigate(
                    // OneFragmentDirections.actionOneFragmentToTwoFragment()
-               // )
+                //)
 
                 viewModel.resetAllValues()
             }
         }
-    }
-}
+    //}
+//}

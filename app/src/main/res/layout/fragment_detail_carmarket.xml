@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/carMarket_detail_background"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/carmarket_background" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#C6C6C6"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/carMarket_detail_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/carMarket_detail_background"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/carmarket_headline_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_detail"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_detail"
+            app:layout_constraintTop_toTopOf="@+id/toolbar_detail"
+            app:layout_constraintVertical_bias="0.0"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            tools:text="Golf VII" />
+
+        <TextView
+            android:id="@+id/carmarkt_car_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_detail"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar_detail"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_detail"
+            app:layout_constraintTop_toTopOf="@+id/toolbar_detail"
+            tools:text="CL 63 AMG" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carmarkt_detail_cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#C6C6C6"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/carMarket_detail_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_detail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="342dp"
+                android:layout_height="500dp">
+
+                <ImageView
+                    android:id="@+id/carmarkt_detail_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="96dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/mercedes_benz_cl63_png" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_manufacture_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="Manufacturer:"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_model_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="Model:"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/carmarkt_detail_manufacture_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_manufacture_text" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_performance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="Performance:"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/carmarkt_detail_model_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_model_text" />
+
+                <TextView
+                    android:id="@+id/carmmarkt_detail_consumption_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="Consumption:"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/carmarkt_detail_performance_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_performance_text" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_manufacture_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/orbitron"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/carmarkt_detail_manufacture_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/carmarkt_detail_manufacture_text"
+                    tools:text="Mercedes Benz" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_model_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/carmarkt_detail_manufacture_text_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_manufacture_text_text"
+                    tools:text="CL 63 AMG" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_performance_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/carmarkt_detail_model_text_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_model_text_text"
+                    tools:text="544 PS" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_consumption_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="@+id/carmarkt_detail_performance_text_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_performance_text_text"
+                    tools:text="16,9l / 100km" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_racebonus_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="Race Bonus:"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_image" />
+
+                <TextView
+                    android:id="@+id/carmarkt_detail_racebonus_text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/orbitron"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/carmarkt_detail_racebonus_text"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_racebonus_text"
+                    tools:text="+1900 extra steps" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
