@@ -42,13 +42,13 @@ class GarageFragment : Fragment() {
 
         viewModel.loadCars()
 
-        binding.raceNavButton.setOnClickListener {
+        binding.garageRaceNavButton.setOnClickListener {
             findNavController().navigate(
                 GarageFragmentDirections.actionGarageFragmentToRaceFragment()
             )
         }
 
-        binding.carMarketNavButton.setOnClickListener {
+        binding.garageCarMarketNavButton.setOnClickListener {
             findNavController().navigate(
                 GarageFragmentDirections.actionGarageFragmentToCarMarketFragment()
             )

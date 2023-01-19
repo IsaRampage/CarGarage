@@ -33,8 +33,23 @@
         android:name="com.example.cargarage1.ui.CarMarketDetailFragment"
         android:label="CarMarketDetailFragment" >
         <argument
-            android:name="car"
-            app:argType="Car"/>
+            android:name="manufacturer"
+            app:argType="string" />
+        <argument
+            android:name="model"
+            app:argType="string" />
+        <argument
+            android:name="performance"
+            app:argType="string" />
+        <argument
+            android:name="consumption"
+            app:argType="string" />
+        <argument
+            android:name="racebonus"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/raceFragment"

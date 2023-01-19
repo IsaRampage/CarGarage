@@ -50,13 +50,22 @@ class CarMarketAdapter() : RecyclerView.Adapter<CarMarketAdapter.ItemViewHolder>
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val cars = dataset[position]
 
+        val manufacturer: String = cars.manufacturer
+        val model: String = cars.model
+        val performance: String = cars.performance
+        val consumption: String = cars.consumption
+        val raceBonus: String = cars.raceBonus
+        val carImage: String = cars.carImage
+
         holder.carMarketImage.load(cars.carImage)
         holder.manufacturerHeadline.text = cars.manufacturer
         holder.modelHeadline.text = cars.model
 
         holder.carMarketCard.setOnClickListener {
             holder.itemView.findNavController()
-                .navigate(CarMarketFragmentDirections.actionCarMarketFragmentToCarMarketDetailFragment(cars))
+                .navigate(
+                    CarMarketFragmentDirections.actionCarMarketFragmentToCarMarketDetailFragment(
+                        manufacturer, model,performance,consumption,raceBonus,carImage))
         }
     }
 
