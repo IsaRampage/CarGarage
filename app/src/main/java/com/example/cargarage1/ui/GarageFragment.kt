@@ -7,17 +7,19 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
 import com.example.cargarage1.MainViewModel
-import de.syntaxinstitut.carGarage1.databinding.FragmentOneBinding
+import com.example.cargarage1.adapter.GarageAdapter
+import de.syntaxinstitut.carGarage1.databinding.FragmentGarageBinding
 
 /**
  * Fragment 1
  */
-class OneFragment : Fragment() {
+class GarageFragment : Fragment() {
 
     /* -------------------- Klassen Variablen -------------------- */
 
-    private lateinit var binding: FragmentOneBinding
+    private lateinit var binding: FragmentGarageBinding
     private val viewModel: MainViewModel by activityViewModels()
 
     /* -------------------- Lifecycle -------------------- */
@@ -27,7 +29,7 @@ class OneFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentOneBinding.inflate(inflater)
+        binding = FragmentGarageBinding.inflate(inflater)
 
         return binding.root
     }
@@ -35,23 +37,22 @@ class OneFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        /* -------------------- UI-Interaktionen -------------------- */
+        val garageAdapter = GarageAdapter()
+        binding.garageRecycler.adapter = garageAdapter
+
+        viewModel.loadCars()
+
+        binding.raceNavButton.setOnClickListener {
+            findNavController().navigate(
+                GarageFragmentDirections.actionGarageFragmentToRaceFragment()
+            )
+        }
 
         binding.carMarketNavButton.setOnClickListener {
-            viewModel.navigateToFragmentTwo()
+            findNavController().navigate(
+                GarageFragmentDirections.actionGarageFragmentToCarMarketFragment()
+            )
         }
+    }
+}
 
-        /* -------------------- Observer -------------------- */
-
-        // Navigation zum zweiten Fragment
-       // viewModel.navigateToFragmentTwo.observe(viewLifecycleOwner) {
-            //if (it) {
-              //  findNavController().navigate(
-                   // OneFragmentDirections.actionOneFragmentToTwoFragment()
-                //)
-
-                viewModel.resetAllValues()
-            }
-        }
-    //}
-//}

@@ -2,18 +2,49 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/twoFragment">
-
+    app:startDestination="@id/carMarketFragment">
     <fragment
-        android:id="@+id/oneFragment"
-        android:name="com.example.cargarage1.ui.OneFragment"
-        android:label="OneFragment" />
-    <fragment
-        android:id="@+id/twoFragment"
-        android:name="com.example.cargarage1.ui.TwoFragment"
-        android:label="TwoFragment" >
+        android:id="@+id/garageFragment"
+        android:name="com.example.cargarage1.ui.GarageFragment"
+        android:label="GarageFragment" >
         <action
-            android:id="@+id/action_twoFragment_to_oneFragment"
-            app:destination="@id/oneFragment" />
+            android:id="@+id/action_garageFragment_to_carMarketFragment"
+            app:destination="@id/carMarketFragment" />
+        <action
+            android:id="@+id/action_garageFragment_to_raceFragment"
+            app:destination="@id/raceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carMarketFragment"
+        android:name="com.example.cargarage1.ui.CarMarketFragment"
+        android:label="CarMarketFragment" >
+        <action
+            android:id="@+id/action_carMarketFragment_to_garageFragment"
+            app:destination="@id/garageFragment" />
+        <action
+            android:id="@+id/action_carMarketFragment_to_carMarketDetailFragment"
+            app:destination="@id/carMarketDetailFragment" />
+        <action
+            android:id="@+id/action_carMarketFragment_to_raceFragment"
+            app:destination="@id/raceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carMarketDetailFragment"
+        android:name="com.example.cargarage1.ui.CarMarketDetailFragment"
+        android:label="CarMarketDetailFragment" >
+        <argument
+            android:name="car"
+            app:argType="Car"/>
+    </fragment>
+    <fragment
+        android:id="@+id/raceFragment"
+        android:name="com.example.cargarage1.ui.RaceFragment"
+        android:label="RaceFragment" >
+        <action
+            android:id="@+id/action_raceFragment_to_garageFragment"
+            app:destination="@id/garageFragment" />
+        <action
+            android:id="@+id/action_raceFragment_to_carMarketFragment"
+            app:destination="@id/carMarketFragment" />
     </fragment>
 </navigation>

@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "Marke": "VW",
+    "Modell": "Golf VII",
+    "Baujahr": 2019,
+    "Leistung": "150 PS",
+    "Verbrauch": "6,4l / 100km",
+    "Preis": "2000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Volkswagen-PNG-Picture.png",
+    "Race Bonus": "+10% extra steps"
+  },
+  {
+    "id": 2,
+    "Marke": "VW",
+    "Modell": "Passat CC",
+    "Baujahr": 2012,
+    "Leistung": "170 PS",
+    "Verbrauch": "7,1l / 100km",
+    "Preis": "2000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Volkswagen.png",
+    "Race Bonus": "+12% extra steps"
+  },
+  {
+    "id": 3,
+    "Marke": "BMW",
+    "Modell": "5er",
+    "Baujahr": 2010,
+    "Leistung": "180 PS",
+    "Verbrauch": "7,9l / 100km",
+    "Preis": "2500P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/BMW-PNG-Clipart.png",
+    "Race Bonus": "+500 extra steps"
+  },
+  {
+    "id": 4,
+    "Marke": "BMW",
+    "Modell": "6er",
+    "Baujahr": 2012,
+    "Leistung": "330 PS",
+    "Verbrauch": "12,2l / 100km",
+    "Preis": "4000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/BMW-Free-PNG-Image.png",
+    "Race Bonus": "+800 extra steps"
+  },
+  {
+    "id": 5,
+    "Marke": "BMW",
+    "Modell": "M2",
+    "Baujahr": 2019,
+    "Leistung": "340 PS",
+    "Verbrauch": "13,3l / 100km",
+    "Preis": "5500P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/BMW-PNG-Image.png",
+    "Race Bonus": "+1000 extra steps"
+  },
+  {
+    "id": 6,
+    "Marke": "BMW",
+    "Modell": "M3",
+    "Baujahr": 2012,
+    "Leistung": "431 PS",
+    "Verbrauch": "15,2l / 100km",
+    "Preis": "7000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/BMW.png",
+    "Race Bonus": "+1500 extra steps"
+  },
+  {
+    "id": 7,
+    "Marke": "Audi",
+    "Modell": "TT - Coupe",
+    "Baujahr": 2012,
+    "Leistung": "231 PS",
+    "Verbrauch": "10l / 100km",
+    "Preis": "2750P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Audi-Free-Download-PNG.png",
+    "Race Bonus": "+650 extra steps"
+  },
+  {
+    "id": 8,
+    "Marke": "Audi",
+    "Modell": "S7",
+    "Baujahr": 2016,
+    "Leistung": "349 PS",
+    "Verbrauch": "13l / 100km",
+    "Preis": "5500P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Audi-PNG-Image.png",
+    "Race Bonus": "+1250 extra steps"
+  },
+  {
+    "id": 9,
+    "Marke": "Audi",
+    "Modell": "RS5",
+    "Baujahr": 2016,
+    "Leistung": "450 PS",
+    "Verbrauch": "15,1l / 100km",
+    "Preis": "7000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Audi-PNG-Picture.png",
+    "Race Bonus": "+1500 extra steps"
+  },
+  {
+    "id": 10,
+    "Marke": "Audi",
+    "Modell": "R8",
+    "Baujahr": 2014,
+    "Leistung": "550 PS",
+    "Verbrauch": "16,2l / 100km",
+    "Preis": "10000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Audi-PNG-Pic.png",
+    "Race Bonus": "+2000 extra steps"
+  },
+  {
+    "id": 11,
+    "Marke": "Mercedes Benz",
+    "Modell": "G 63 AMG",
+    "Baujahr": 2020,
+    "Leistung": "544 PS",
+    "Verbrauch": "17,1l / 100km",
+    "Preis": "10000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Mercedes-Benz-PNG-Picture.png",
+    "Race Bonus": "+1900 extra steps"
+  },
+  {
+    "id": 12,
+    "Marke": "Mercedes Benz",
+    "Modell": "CL 63 AMG",
+    "Baujahr": 2010,
+    "Leistung": "544 PS",
+    "Verbrauch": "16.9l / 100km",
+    "Preis": "10000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Mercedes-Benz-PNG.png",
+    "Race Bonus": "+1900 extra steps"
+  },
+  {
+    "id": 13,
+    "Marke": "Mercedes Benz",
+    "Modell": "S 63 AMG Coupe",
+    "Baujahr": 2018,
+    "Leistung": "585 PS",
+    "Verbrauch": "16,9l / 100km",
+    "Preis": "12500P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Mercedes-Benz-PNG-Pic.png",
+    "Race Bonus": "+2000 extra steps"
+  },
+  {
+    "id": 14,
+    "Marke": "Mercedes Benz",
+    "Modell": "SLR AMG",
+    "Baujahr": 2009,
+    "Leistung": "626 PS",
+    "Verbrauch": "17,3l / 100km",
+    "Preis": "15000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Mercedes-Benz-PNG-Image.png",
+    "Race Bonus": "+2222 extra steps"
+  },
+  {
+    "id": 15,
+    "Marke": "Ford",
+    "Modell": "Mustang",
+    "Baujahr": 2016,
+    "Leistung": "421 PS",
+    "Verbrauch": "15,2l / 100km",
+    "Preis": "7500P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Ford-Mustang-Blue.png",
+    "Race Bonus": "+1550 extra steps"
+  },
+  {
+    "id": 16,
+    "Marke": "Dodge",
+    "Modell": "Challenger SRT",
+    "Baujahr": 2012,
+    "Leistung": "717 PS",
+    "Verbrauch": "18,1l / 100km",
+    "Preis": "15000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Red-Dodge-Challenger-PNG-Pic.png",
+    "Race Bonus": "+2100 extra steps"
+  },
+  {
+    "id": 17,
+    "Marke": "Tesla",
+    "Modell": "Model S",
+    "Baujahr": 2022,
+    "Leistung": "1020 PS",
+    "Verbrauch": "20 kWh / 100km",
+    "Preis": "25000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/White-Tesla-PNG-Images.png",
+    "Race Bonus": "+50% extra steps"
+  },
+  {
+    "id": 18,
+    "Marke": "Ferrari",
+    "Modell": "Spider 458",
+    "Baujahr": 2017,
+    "Leistung": "566 PS",
+    "Verbrauch": "17,2l / 100km",
+    "Preis": "15000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Luxury-Car-PNG-File-Download-Free.png",
+    "Race Bonus": "+2000 extra steps"
+  },
+  {
+    "id": 19,
+    "Marke": "Bugatti",
+    "Modell": "Veyron 16.4",
+    "Baujahr": 2017,
+    "Leistung": "1200 PS",
+    "Verbrauch": "20,2l / 100km",
+    "Preis": "20000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Bugatti-Free-Download-PNG.png",
+    "Race Bonus": "+3000 extra steps"
+  },
+  {
+    "id": 20,
+    "Marke": "Bugatti",
+    "Modell": "Veyron 16.4",
+    "Baujahr": 2017,
+    "Leistung": "1200 PS",
+    "Verbrauch": "20,2l / 100km",
+    "Preis": "20000P",
+    "Img": "https://public.syntax-institut.de/apps/batch4/Steven/pics/Luxury-Car-PNG-Clipart.png",
+    "Race Bonus": "+3000 extra steps"
+  }
+]

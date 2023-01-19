@@ -40,7 +40,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/carmarket_headline_detail_text"
+            android:id="@+id/carmarket_detail_back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/orbitron"
@@ -53,6 +53,7 @@
             app:layout_constraintTop_toTopOf="@+id/toolbar_detail"
             app:layout_constraintVertical_bias="0.0"
             app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            android:clickable="true"
             tools:text="Golf VII" />
 
         <TextView
@@ -208,6 +209,18 @@
                     app:layout_constraintStart_toStartOf="@+id/carmarkt_detail_racebonus_text"
                     app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_racebonus_text"
                     tools:text="+1900 extra steps" />
+
+                <Button
+                    android:id="@+id/carmarket_detail_save_button"
+                    android:layout_width="104dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#B54040"
+                    android:text="save"
+                    app:cornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carmarkt_detail_image" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 

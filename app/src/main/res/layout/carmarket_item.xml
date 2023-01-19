@@ -33,7 +33,7 @@
                 <ImageView
                     android:id="@+id/carmarkt_item_image"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
                     android:textSize="10sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/carmarkt_item_image"
+                    app:layout_constraintTop_toTopOf="parent"
                     tools:text="Mercedes Benz " />
 
                 <TextView
@@ -62,7 +62,7 @@
                     android:fontFamily="@font/orbitron"
                     android:textColor="#000000"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/carmarkt_item_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:text="CL 63 AMG" />
