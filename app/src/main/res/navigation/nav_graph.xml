@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/carMarketFragment">
+    app:startDestination="@id/signUpFragment">
     <fragment
         android:id="@+id/garageFragment"
         android:name="com.example.cargarage1.ui.GarageFragment"
@@ -33,23 +33,11 @@
         android:name="com.example.cargarage1.ui.CarMarketDetailFragment"
         android:label="CarMarketDetailFragment" >
         <argument
-            android:name="manufacturer"
-            app:argType="string" />
-        <argument
-            android:name="model"
-            app:argType="string" />
-        <argument
-            android:name="performance"
-            app:argType="string" />
-        <argument
-            android:name="consumption"
-            app:argType="string" />
-        <argument
-            android:name="racebonus"
-            app:argType="string" />
-        <argument
             android:name="image"
             app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/raceFragment"
@@ -61,5 +49,21 @@
         <action
             android:id="@+id/action_raceFragment_to_carMarketFragment"
             app:destination="@id/carMarketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.cargarage1.ui.LogInFragment"
+        android:label="LogInFragment" >
+        <action
+            android:id="@+id/action_logInFragment_to_garageFragment"
+            app:destination="@id/garageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.cargarage1.ui.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
     </fragment>
 </navigation>

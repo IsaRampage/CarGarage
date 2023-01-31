@@ -7,8 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.apicalls.data.AppRepository
+import com.example.apicalls.data.remote.CarApi
 import com.example.cargarage1.MainViewModel
 import com.example.cargarage1.adapter.CarMarketAdapter
+import com.example.cargarage1.data.local.getDatabase
 import de.syntaxinstitut.carGarage1.databinding.FragmentCarmarketBinding
 
 
@@ -21,6 +24,7 @@ class CarMarketFragment : Fragment() {
 
     private lateinit var binding: FragmentCarmarketBinding
     private val viewModel: MainViewModel by activityViewModels()
+
 
     /* -------------------- Lifecycle -------------------- */
 
@@ -36,6 +40,7 @@ class CarMarketFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         val carMarketAdapter = CarMarketAdapter()
         binding.carMarketRecycler.adapter = carMarketAdapter

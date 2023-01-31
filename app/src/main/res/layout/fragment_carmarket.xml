@@ -23,7 +23,7 @@
             app:srcCompat="@drawable/carmarket_background" />
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/carMarket_toolbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -45,10 +45,10 @@
             android:text="Car Market"
             android:textColor="#000000"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintBottom_toBottomOf="@+id/carMarket_toolbar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="@+id/toolbar" />
+            app:layout_constraintStart_toStartOf="@+id/carMarket_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/carMarket_toolbar" />
 
         <Button
             android:id="@+id/carmarket_race_nav_button"
@@ -65,7 +65,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/carMarket_toolbar"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button

@@ -7,6 +7,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.apicalls.data.AppRepository
 import com.example.apicalls.data.remote.CarApi
+import com.example.cargarage1.data.Model.Car
+import com.example.cargarage1.data.local.getDatabase
 import kotlinx.coroutines.launch
 
 /**
@@ -15,11 +17,13 @@ import kotlinx.coroutines.launch
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     var TAG = "MainViewModel"
-    var repository = AppRepository(CarApi)
+    private val database = getDatabase(application)
+    var repository = AppRepository(CarApi, database)
     /* -------------------- Klassen Variablen -------------------- */
 
     var cars = repository.cars
-    // var navigateToFragmentTwo = MutableLiveData(false)
+    var garageCars = repository.garage
+
 
     fun loadCars() {
         viewModelScope.launch {
@@ -30,13 +34,17 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             }
         }
     }
-    /* -------------------- Öffentliche Funktionen -------------------- */
 
-    //fun navigateToFragmentTwo() {
-      //  navigateToFragmentTwo.value = true
-    //}
 
-    //fun resetAllValues() {
-      //  navigateToFragmentTwo.value = false
-    //}
+    fun updateCar(car: Car) {
+        var newCar1 = car
+        car.isGarage = !car.isGarage
+        viewModelScope.launch {
+            try {
+                repository.saveCar(newCar1)
+            } catch (e: Exception) {
+                Log.e(TAG, "failed loading cars: $e")
+            }
+        }
+    }
 }

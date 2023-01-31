@@ -19,6 +19,7 @@ class CarMarketDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailCarmarketBinding
     private val viewModel: MainViewModel by activityViewModels()
+    private var idCar: Int = 0
     private var manufacturer: String = ""
     private var model: String =""
     private var performance: String =""
@@ -30,11 +31,12 @@ class CarMarketDetailFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
         arguments?.let {
-            manufacturer = it.getString("manufacturer").toString()
-            model = it.getString("model").toString()
-            performance = it.getString("performance").toString()
-            consumption = it.getString("consumption").toString()
-            raceBonus = it.getString("racebonus").toString()
+            idCar = it.getInt("id")
+          //  manufacturer = it.getString("manufacturer").toString()
+            //model = it.getString("model").toString()
+            //performance = it.getString("performance").toString()
+            //consumption = it.getString("consumption").toString()
+            //raceBonus = it.getString("racebonus").toString()
             carImage = it.getString("image").toString()
         }
     }
@@ -52,17 +54,22 @@ class CarMarketDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.carmarktDetailManufactureTextText.text = manufacturer
-        binding.carmarktDetailModelTextText.text = model
-        binding.carmarktDetailPerformanceTextText.text = performance
-        binding.carmarktDetailConsumptionTextText.text = consumption
-        binding.carmarktDetailRacebonusTextText.text = raceBonus
+        var car = viewModel.cars.value?.find { it.id == idCar }!!
+
+        binding.carmarktDetailManufactureTextText.text = car.manufacturer
+        binding.carmarktDetailModelTextText.text = car.model
+        binding.carmarktDetailPerformanceTextText.text = car.performance
+        binding.carmarktDetailConsumptionTextText.text = car.consumption
+        binding.carmarktDetailRacebonusTextText.text = car.raceBonus
         binding.carmarktDetailImage.load(carImage)
-        binding.carmarktCarNameDetail.text = model
+        binding.carmarktCarNameDetail.text = car.model
 
         binding.carmarketDetailBackButton.setOnClickListener {
             findNavController().navigateUp()
         }
-    }
 
+        binding.carmarketDetailSaveButton.setOnClickListener {
+        viewModel.updateCar(car)
+        }
+    }
 }

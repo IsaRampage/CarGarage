@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/signup_background"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/garage_background" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signup_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#C6C6C6"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signup_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:text="Sign Up"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/signup_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/signup_toolbar" />
+
+        <ImageButton
+            android:id="@+id/signup_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C6C6C6"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_toolbar_text"
+            app:layout_constraintStart_toStartOf="@+id/signup_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/signup_toolbar_text"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="#B54040"
+            android:fontFamily="@font/orbitron"
+            android:text="Sign Up"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signup_name_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background_border"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_toolbar" />
+
+        <EditText
+            android:id="@+id/signup_name_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#C6C6C6"
+            android:ems="10"
+            android:hint="Name..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_name_background"
+            app:layout_constraintEnd_toEndOf="@+id/signup_name_background"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/signup_name_background"
+            app:layout_constraintTop_toTopOf="@+id/signup_name_background" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signup_email_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background_border"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_name_background" />
+
+        <EditText
+            android:id="@+id/signup_email_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#C6C6C6"
+            android:ems="10"
+            android:hint="E-mail..."
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_email_background"
+            app:layout_constraintEnd_toEndOf="@+id/signup_email_background"
+            app:layout_constraintStart_toStartOf="@+id/signup_email_background"
+            app:layout_constraintTop_toTopOf="@+id/signup_email_background" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signup_password_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background_border"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_email_background" />
+
+        <EditText
+            android:id="@+id/signup_password_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#C6C6C6"
+            android:ems="10"
+            android:hint="Password..."
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_password_background"
+            app:layout_constraintEnd_toEndOf="@+id/signup_password_background"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/signup_password_background"
+            app:layout_constraintTop_toTopOf="@+id/signup_password_background" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signup_repeat_password_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background_border"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_password_background" />
+
+        <EditText
+            android:id="@+id/signup_repeat_password_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#C6C6C6"
+            android:ems="10"
+            android:hint="Repeat password..."
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/signup_repeat_password_background"
+            app:layout_constraintEnd_toEndOf="@+id/signup_repeat_password_background"
+            app:layout_constraintStart_toStartOf="@+id/signup_repeat_password_background"
+            app:layout_constraintTop_toTopOf="@+id/signup_repeat_password_background" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

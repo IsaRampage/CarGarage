@@ -25,7 +25,7 @@
             app:srcCompat="@drawable/carmarket_background" />
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_detail"
+            android:id="@+id/carMarket_detail_toolbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -46,11 +46,11 @@
             android:fontFamily="@font/orbitron"
             android:textColor="#000000"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar_detail"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar_detail"
+            app:layout_constraintBottom_toBottomOf="@+id/carMarket_detail_toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/carMarket_detail_toolbar"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/toolbar_detail"
-            app:layout_constraintTop_toTopOf="@+id/toolbar_detail"
+            app:layout_constraintStart_toStartOf="@+id/carMarket_detail_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/carMarket_detail_toolbar"
             app:layout_constraintVertical_bias="0.0"
             app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
             android:clickable="true"
@@ -63,10 +63,10 @@
             android:fontFamily="@font/orbitron"
             android:textColor="#000000"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar_detail"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar_detail"
-            app:layout_constraintStart_toStartOf="@+id/toolbar_detail"
-            app:layout_constraintTop_toTopOf="@+id/toolbar_detail"
+            app:layout_constraintBottom_toBottomOf="@+id/carMarket_detail_toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/carMarket_detail_toolbar"
+            app:layout_constraintStart_toStartOf="@+id/carMarket_detail_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/carMarket_detail_toolbar"
             tools:text="CL 63 AMG" />
 
         <androidx.cardview.widget.CardView
@@ -78,7 +78,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/carMarket_detail_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_detail">
+            app:layout_constraintTop_toBottomOf="@+id/carMarket_detail_toolbar">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="342dp"

@@ -15,7 +15,7 @@
             android:id="@+id/carmarkt_item_cardView"
             android:layout_width="157dp"
             android:layout_height="137dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#C6C6C6"

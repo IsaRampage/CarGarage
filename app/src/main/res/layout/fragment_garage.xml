@@ -22,7 +22,7 @@
             app:srcCompat="@drawable/garage_background" />
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar2"
+            android:id="@+id/garage_toolbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -44,10 +44,10 @@
             android:text="Garage"
             android:textColor="#000000"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintBottom_toBottomOf="@+id/garage_toolbar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/toolbar2"
-            app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+            app:layout_constraintStart_toStartOf="@+id/garage_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/garage_toolbar" />
 
         <Button
             android:id="@+id/garage_race_nav_button"
@@ -64,7 +64,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintTop_toBottomOf="@+id/garage_toolbar"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button

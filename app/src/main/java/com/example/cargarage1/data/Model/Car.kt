@@ -1,14 +1,21 @@
 package com.example.cargarage1.data.Model
 
 import android.media.Image
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
 
+
+@Entity
 data class Car(
+
+
     val id: Int,
 
     @Json(name = "Marke")
     val manufacturer: String,
 
+    @PrimaryKey
     @Json(name = "Modell")
     val model: String,
 
@@ -28,5 +35,7 @@ data class Car(
     val carImage: String,
 
     @Json(name = "Race Bonus")
-    val raceBonus: String
+    val raceBonus: String,
+
+    var isGarage: Boolean = false
 )

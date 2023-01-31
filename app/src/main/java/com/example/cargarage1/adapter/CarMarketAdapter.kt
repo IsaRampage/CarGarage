@@ -34,6 +34,7 @@ class CarMarketAdapter() : RecyclerView.Adapter<CarMarketAdapter.ItemViewHolder>
         notifyDataSetChanged()
     }
 
+
     // hier werden neue ViewHolder erstellt
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
 
@@ -50,6 +51,7 @@ class CarMarketAdapter() : RecyclerView.Adapter<CarMarketAdapter.ItemViewHolder>
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val cars = dataset[position]
 
+
         val manufacturer: String = cars.manufacturer
         val model: String = cars.model
         val performance: String = cars.performance
@@ -65,7 +67,7 @@ class CarMarketAdapter() : RecyclerView.Adapter<CarMarketAdapter.ItemViewHolder>
             holder.itemView.findNavController()
                 .navigate(
                     CarMarketFragmentDirections.actionCarMarketFragmentToCarMarketDetailFragment(
-                        manufacturer, model,performance,consumption,raceBonus,carImage))
+                        carImage, cars.id))
         }
     }
 

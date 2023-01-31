@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import com.example.cargarage1.MainViewModel
 import com.example.cargarage1.adapter.GarageAdapter
+import com.example.cargarage1.data.Model.Car
 import de.syntaxinstitut.carGarage1.databinding.FragmentGarageBinding
 
 /**
@@ -37,8 +38,15 @@ class GarageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val garageAdapter = GarageAdapter()
+        val updateCar = {car: Car->
+            viewModel.updateCar(car)
+        }
+        val garageAdapter = GarageAdapter(updateCar)
         binding.garageRecycler.adapter = garageAdapter
+
+        viewModel.garageCars.observe(viewLifecycleOwner){
+            garageAdapter.submitList(it)
+        }
 
         viewModel.loadCars()
 

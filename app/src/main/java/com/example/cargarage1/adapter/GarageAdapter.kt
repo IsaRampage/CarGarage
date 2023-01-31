@@ -12,7 +12,7 @@ import coil.load
 import com.example.cargarage1.data.Model.Car
 import de.syntaxinstitut.carGarage1.R
 
-class GarageAdapter() : RecyclerView.Adapter<GarageAdapter.ItemViewHolder>() {
+class GarageAdapter(val updateCar:(car: Car) -> Unit) : RecyclerView.Adapter<GarageAdapter.ItemViewHolder>() {
 
     private var dataset = listOf<Car>()
 
@@ -53,15 +53,18 @@ class GarageAdapter() : RecyclerView.Adapter<GarageAdapter.ItemViewHolder>() {
     // hier findet der Recyclingprozess statt
     // die vom ViewHolder bereitgestellten Parameter werden verändert
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val cars = dataset[position]
+        val car = dataset[position]
 
-        holder.carImage.load(cars.carImage)
-        holder.carManufacturer.text = cars.manufacturer
-        holder.carModel.text = cars.model
-        holder.carPerformance.text = cars.performance
-        holder.carConsumption.text = cars.consumption
-        holder.raceBonus.text = cars.raceBonus
+        holder.carImage.load(car.carImage)
+        holder.carManufacturer.text = car.manufacturer
+        holder.carModel.text = car.model
+        holder.carPerformance.text = car.performance
+        holder.carConsumption.text = car.consumption
+        holder.raceBonus.text = car.raceBonus
         holder.garageCardView
+        holder.deleteButton.setOnClickListener {
+            updateCar(car)
+        }
     }
 
     // damit der LayoutManager weiß wie lang die Liste ist
