@@ -34,3 +34,5 @@ der eigenen Kontaktliste um die Wette "gehen" kann.
 
 
 Wer für sich etwas Nützliches aus dem Projekt nehmen kann, der kann dies gerne tun!
+
+(Hinweis: nicht alle Commits erscheinen Sinnvoll - entstanden im Laufe des Codings. Nicht so sehr beachten :))
